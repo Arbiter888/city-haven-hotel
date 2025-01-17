@@ -95,7 +95,7 @@ const Gallery = () => {
                       alt={image.title}
                       className="w-full h-full object-cover transform-gpu"
                       style={{
-                        imageRendering: "high-quality",
+                        imageRendering: "auto",
                         backfaceVisibility: "hidden",
                       }}
                       loading={index === 0 ? "eager" : "lazy"}
