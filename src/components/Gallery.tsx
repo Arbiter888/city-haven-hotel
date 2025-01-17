@@ -21,7 +21,7 @@ const Gallery = () => {
       description: "Beautiful courtyard featuring historic statuary and fountains",
     },
     {
-      url: "/lovable-uploads/79173392-f980-4fab-8e33-d48ce67f188e.png",
+      url: "/lovable-uploads/8f23cdee-4b4d-420a-bf7a-813f01ae93ac.png",
       title: "Hotel Exterior",
       description: "Majestic colonial architecture with modern comforts",
     },
