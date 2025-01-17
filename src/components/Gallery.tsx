@@ -6,53 +6,53 @@ const Gallery = () => {
 
   const images = [
     {
-      url: "/lovable-uploads/178148c6-20cf-4bdc-bfa2-258cd2315d33.png",
+      url: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png",
       title: "Hotel Exterior",
-      description: "The majestic facade of Ciudad Fernandina",
+      description: "Our beautiful Spanish colonial-style hotel facade",
       sizes: {
-        sm: "/lovable-uploads/178148c6-20cf-4bdc-bfa2-258cd2315d33.png?w=640",
-        md: "/lovable-uploads/178148c6-20cf-4bdc-bfa2-258cd2315d33.png?w=1024",
-        lg: "/lovable-uploads/178148c6-20cf-4bdc-bfa2-258cd2315d33.png?w=1920",
+        sm: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png?w=640",
+        md: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png?w=1024",
+        lg: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png?w=1920",
       }
     },
     {
-      url: "/lovable-uploads/a97c7a7d-ffdd-4784-bce9-1f1013df055d.png",
-      title: "Luxury Suite",
-      description: "Experience comfort in our well-appointed rooms",
+      url: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png",
+      title: "Elegant Interior",
+      description: "Spacious and well-appointed interior spaces",
       sizes: {
-        sm: "/lovable-uploads/a97c7a7d-ffdd-4784-bce9-1f1013df055d.png?w=640",
-        md: "/lovable-uploads/a97c7a7d-ffdd-4784-bce9-1f1013df055d.png?w=1024",
-        lg: "/lovable-uploads/a97c7a7d-ffdd-4784-bce9-1f1013df055d.png?w=1920",
+        sm: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png?w=640",
+        md: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png?w=1024",
+        lg: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png?w=1920",
       }
     },
     {
-      url: "/lovable-uploads/e4abbb19-2535-4e66-bf83-e690b7314fc3.png",
-      title: "Garden Courtyard",
-      description: "Our beautiful courtyard featuring historic statuary",
+      url: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png",
+      title: "Heritage Courtyard",
+      description: "Historic statuary and garden features in our courtyard",
       sizes: {
-        sm: "/lovable-uploads/e4abbb19-2535-4e66-bf83-e690b7314fc3.png?w=640",
-        md: "/lovable-uploads/e4abbb19-2535-4e66-bf83-e690b7314fc3.png?w=1024",
-        lg: "/lovable-uploads/e4abbb19-2535-4e66-bf83-e690b7314fc3.png?w=1920",
+        sm: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png?w=640",
+        md: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png?w=1024",
+        lg: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png?w=1920",
       }
     },
     {
-      url: "/lovable-uploads/a0689743-0307-4878-a049-7c94b6e1a900.png",
-      title: "Dining Experience",
-      description: "Savor delicious meals in our elegant dining room",
+      url: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png",
+      title: "Fine Dining",
+      description: "Exquisite dining experience with local and international cuisine",
       sizes: {
-        sm: "/lovable-uploads/a0689743-0307-4878-a049-7c94b6e1a900.png?w=640",
-        md: "/lovable-uploads/a0689743-0307-4878-a049-7c94b6e1a900.png?w=1024",
-        lg: "/lovable-uploads/a0689743-0307-4878-a049-7c94b6e1a900.png?w=1920",
+        sm: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png?w=640",
+        md: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png?w=1024",
+        lg: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png?w=1920",
       }
     },
     {
-      url: "/lovable-uploads/3dc3e571-2958-42c9-ae51-877b6882b60f.png",
+      url: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png",
       title: "Local Experience",
-      description: "Take a traditional kalesa ride through historic streets",
+      description: "Experience traditional kalesa rides through historic Vigan",
       sizes: {
-        sm: "/lovable-uploads/3dc3e571-2958-42c9-ae51-877b6882b60f.png?w=640",
-        md: "/lovable-uploads/3dc3e571-2958-42c9-ae51-877b6882b60f.png?w=1024",
-        lg: "/lovable-uploads/3dc3e571-2958-42c9-ae51-877b6882b60f.png?w=1920",
+        sm: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png?w=640",
+        md: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png?w=1024",
+        lg: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png?w=1920",
       }
     },
   ];
