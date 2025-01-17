@@ -6,17 +6,17 @@ const Gallery = () => {
 
   const images = [
     {
-      url: "/lovable-uploads/84a755bb-f04f-4c59-951a-ae8b7477217a.png",
+      url: "/lovable-uploads/2c57d492-c40f-4252-8b29-2090f91dd6e7.png",
       title: "Luxurious Interior",
       description: "Elegant and spacious interior spaces with modern amenities",
       sizes: {
         sm: {
-          webp: "/lovable-uploads/84a755bb-f04f-4c59-951a-ae8b7477217a.png",
-          jpg: "/lovable-uploads/84a755bb-f04f-4c59-951a-ae8b7477217a.png",
+          webp: "/lovable-uploads/2c57d492-c40f-4252-8b29-2090f91dd6e7.png",
+          jpg: "/lovable-uploads/2c57d492-c40f-4252-8b29-2090f91dd6e7.png",
         },
         lg: {
-          webp: "/lovable-uploads/84a755bb-f04f-4c59-951a-ae8b7477217a.png",
-          jpg: "/lovable-uploads/84a755bb-f04f-4c59-951a-ae8b7477217a.png",
+          webp: "/lovable-uploads/2c57d492-c40f-4252-8b29-2090f91dd6e7.png",
+          jpg: "/lovable-uploads/2c57d492-c40f-4252-8b29-2090f91dd6e7.png",
         }
       }
     },
