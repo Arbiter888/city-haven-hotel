@@ -27,7 +27,7 @@
   }
 
   * {
-    @apply border-border scroll-smooth;
+    @apply border-[#2C1810] scroll-smooth;
   }
 
   body {
