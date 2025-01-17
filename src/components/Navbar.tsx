@@ -13,6 +13,28 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 80; // Account for fixed navbar
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+      setIsMenuOpen(false);
+    }
+  };
+
+  const navItems = [
+    { label: "Gallery", id: "gallery" },
+    { label: "About", id: "hotel-info" },
+    { label: "Reviews", id: "testimonials" }
+  ];
+
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
@@ -35,20 +57,24 @@ const Navbar = () => {
           </button>
 
           <div className="hidden lg:flex items-center space-x-8">
-            {["Rooms", "Dining", "Experiences", "Gallery", "Contact"].map(
-              (item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="text-cream hover:text-white transition-colors font-inter font-medium text-shadow"
-                >
-                  {item}
-                </a>
-              )
-            )}
-            <button className="bg-cream text-brown px-6 py-2 rounded hover:bg-cream/90 transition-colors font-inter">
+            {navItems.map((item) => (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                onClick={(e) => handleNavClick(e, item.id)}
+                className="text-cream hover:text-white transition-colors font-inter font-medium text-shadow tracking-wide"
+              >
+                {item.label}
+              </a>
+            ))}
+            <a
+              href="https://www.booking.com/Share-ucGXwZ8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-cream text-brown px-6 py-2 rounded hover:bg-cream/90 transition-colors font-inter font-medium"
+            >
               Book Now
-            </button>
+            </a>
           </div>
         </div>
 
@@ -58,21 +84,24 @@ const Navbar = () => {
           }`}
         >
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            {["Rooms", "Dining", "Experiences", "Gallery", "Contact"].map(
-              (item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="text-cream hover:text-white transition-colors font-inter"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item}
-                </a>
-              )
-            )}
-            <button className="bg-cream text-brown px-6 py-2 rounded hover:bg-cream/90 transition-colors font-inter">
+            {navItems.map((item) => (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                onClick={(e) => handleNavClick(e, item.id)}
+                className="text-cream hover:text-white transition-colors font-inter font-medium tracking-wide"
+              >
+                {item.label}
+              </a>
+            ))}
+            <a
+              href="https://www.booking.com/Share-ucGXwZ8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-cream text-brown px-6 py-2 rounded hover:bg-cream/90 transition-colors font-inter text-center font-medium"
+            >
               Book Now
-            </button>
+            </a>
           </div>
         </div>
       </div>

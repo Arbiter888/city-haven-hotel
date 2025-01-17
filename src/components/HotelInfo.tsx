@@ -24,7 +24,7 @@ const HotelInfo = () => {
   ];
 
   return (
-    <section className="py-20 bg-cream">
+    <section id="hotel-info" className="py-20 bg-cream">
       <div className="container mx-auto px-4">
         {/* Main Description */}
         <div className="max-w-3xl mx-auto text-center mb-16">
