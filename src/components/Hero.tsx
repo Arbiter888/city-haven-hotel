@@ -55,9 +55,19 @@ const Hero = () => {
               <p className="text-xl md:text-2xl font-inter text-white/90">
                 {slide.subtitle}
               </p>
-              <button className="mt-8 bg-cream text-brown px-8 py-3 rounded hover:bg-cream/90 transition-colors font-inter">
-                Book Your Stay
-              </button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                <a
+                  href="https://www.booking.com/Share-ucGXwZ8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#003580] text-white px-8 py-3 rounded hover:bg-[#003580]/90 transition-colors font-inter flex items-center justify-center"
+                >
+                  Book on Booking.com
+                </a>
+                <button className="bg-cream text-brown px-8 py-3 rounded hover:bg-cream/90 transition-colors font-inter">
+                  Contact Us
+                </button>
+              </div>
             </div>
           </div>
         </div>
