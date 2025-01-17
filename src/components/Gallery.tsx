@@ -59,7 +59,12 @@ const Gallery = () => {
                   <img
                     src={image.url}
                     alt={image.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transform-gpu"
+                    style={{
+                      imageRendering: "-webkit-optimize-contrast",
+                      backfaceVisibility: "hidden",
+                    }}
+                    loading={index === 0 ? "eager" : "lazy"}
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8">
                     <h3 className="text-2xl font-playfair text-white mb-2">
