@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
 import HotelInfo from "@/components/HotelInfo";
+import FloatingButtons from "@/components/FloatingButtons";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <Gallery />
       <HotelInfo />
       <Testimonials />
+      <FloatingButtons />
     </div>
   );
 };

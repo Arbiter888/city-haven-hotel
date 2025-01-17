@@ -101,6 +101,23 @@ const HotelInfo = () => {
           </div>
         </div>
 
+        {/* Google Maps Embed */}
+        <div className="mb-16 bg-white p-6 rounded-lg shadow-md">
+          <h3 className="text-2xl font-playfair font-bold text-brown mb-6 flex items-center justify-center">
+            <MapPin className="w-5 h-5 mr-2 text-gold" />
+            Our Location
+          </h3>
+          <div className="relative w-full h-[450px] rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.6576737171903!2d120.38523147507825!3d17.575197083980825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338e65767371fa35%3A0x1739df05cc06fd31!2sCiudad%20Fernandina%20Hotel!5e0!3m2!1sen!2sph!4v1710644547372!5m2!1sen!2sph"
+              className="absolute inset-0 w-full h-full border-0"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
         {/* Airport Information */}
         <div className="bg-white p-6 rounded-lg shadow-md text-center">
           <h3 className="text-2xl font-playfair font-bold text-brown mb-4 flex items-center justify-center">
