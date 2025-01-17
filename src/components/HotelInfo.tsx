@@ -1,9 +1,9 @@
-import { Wifi, Car, Clock, MapPin, Phone, Restaurant, Tv, Lock } from "lucide-react";
+import { Wifi, Car, Clock, MapPin, Phone, Utensils, Tv, Lock } from "lucide-react";
 
 const HotelInfo = () => {
   const facilities = [
     { icon: <Wifi className="w-6 h-6" />, label: "Free WiFi" },
-    { icon: <Restaurant className="w-6 h-6" />, label: "Restaurant" },
+    { icon: <Utensils className="w-6 h-6" />, label: "Restaurant" },
     { icon: <Clock className="w-6 h-6" />, label: "24/7 Front Desk" },
     { icon: <Car className="w-6 h-6" />, label: "Airport Shuttle" },
     { icon: <Tv className="w-6 h-6" />, label: "Flat-screen TV" },
@@ -81,7 +81,7 @@ const HotelInfo = () => {
 
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-playfair font-bold text-brown mb-6 flex items-center">
-              <Restaurant className="w-5 h-5 mr-2 text-gold" />
+              <Utensils className="w-5 h-5 mr-2 text-gold" />
               Dining Options
             </h3>
             <div className="space-y-4">
