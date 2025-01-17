@@ -6,27 +6,27 @@ const Gallery = () => {
 
   const images = [
     {
-      url: "/lovable-uploads/f1875fa0-753a-4682-9064-6e711c4e29a8.png",
+      url: "/lovable-uploads/b106133c-691f-4cb4-8aa7-4596b643ee1b.png",
       title: "Fine Dining",
       description: "Exquisite dining experience with local and international cuisine",
     },
     {
-      url: "/lovable-uploads/e32826fb-6401-45ba-9502-a11024bd6727.png",
+      url: "/lovable-uploads/82232ddb-c395-4a9a-b0e9-0ceb181449fe.png",
       title: "Luxurious Interior",
       description: "Elegant and spacious interior spaces with modern amenities",
     },
     {
-      url: "/lovable-uploads/93972150-7456-45c0-9051-0cb5b47fe575.png",
+      url: "/lovable-uploads/9fd46ac6-4acb-4a23-aa3b-aa5c74c910e3.png",
       title: "Heritage Courtyard",
       description: "Beautiful courtyard featuring historic statuary and fountains",
     },
     {
-      url: "/lovable-uploads/09c53088-db56-4b48-90a0-fb51898c5581.png",
+      url: "/lovable-uploads/79173392-f980-4fab-8e33-d48ce67f188e.png",
       title: "Hotel Exterior",
       description: "Majestic colonial architecture with modern comforts",
     },
     {
-      url: "/lovable-uploads/0c040402-0533-44c1-875a-29a3e9741fe6.png",
+      url: "/lovable-uploads/909eeeae-cb05-43c6-b4ca-3c4dd9e92fe3.png",
       title: "Local Experience",
       description: "Traditional kalesa rides through historic streets",
     },
