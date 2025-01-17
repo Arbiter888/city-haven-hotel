@@ -6,77 +6,77 @@ const Gallery = () => {
 
   const images = [
     {
-      url: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png",
-      title: "Hotel Exterior",
-      description: "Our beautiful Spanish colonial-style hotel facade",
+      url: "/lovable-uploads/84a755bb-f04f-4c59-951a-ae8b7477217a.png",
+      title: "Luxurious Interior",
+      description: "Elegant and spacious interior spaces with modern amenities",
       sizes: {
         sm: {
-          webp: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png",
-          jpg: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png",
+          webp: "/lovable-uploads/84a755bb-f04f-4c59-951a-ae8b7477217a.png",
+          jpg: "/lovable-uploads/84a755bb-f04f-4c59-951a-ae8b7477217a.png",
         },
         lg: {
-          webp: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png",
-          jpg: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png",
+          webp: "/lovable-uploads/84a755bb-f04f-4c59-951a-ae8b7477217a.png",
+          jpg: "/lovable-uploads/84a755bb-f04f-4c59-951a-ae8b7477217a.png",
         }
       }
     },
     {
-      url: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png",
-      title: "Elegant Interior",
-      description: "Spacious and well-appointed interior spaces",
-      sizes: {
-        sm: {
-          webp: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png",
-          jpg: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png",
-        },
-        lg: {
-          webp: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png",
-          jpg: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png",
-        }
-      }
-    },
-    {
-      url: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png",
+      url: "/lovable-uploads/d5b22810-2aae-4385-b4d7-5c9463797e2e.png",
       title: "Heritage Courtyard",
-      description: "Historic statuary and garden features in our courtyard",
+      description: "Beautiful courtyard featuring historic statuary and fountains",
       sizes: {
         sm: {
-          webp: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png",
-          jpg: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png",
+          webp: "/lovable-uploads/d5b22810-2aae-4385-b4d7-5c9463797e2e.png",
+          jpg: "/lovable-uploads/d5b22810-2aae-4385-b4d7-5c9463797e2e.png",
         },
         lg: {
-          webp: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png",
-          jpg: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png",
+          webp: "/lovable-uploads/d5b22810-2aae-4385-b4d7-5c9463797e2e.png",
+          jpg: "/lovable-uploads/d5b22810-2aae-4385-b4d7-5c9463797e2e.png",
         }
       }
     },
     {
-      url: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png",
+      url: "/lovable-uploads/d45c62e1-1fd2-464c-bda8-070678bcbb05.png",
+      title: "Hotel Exterior",
+      description: "Majestic colonial architecture with modern comforts",
+      sizes: {
+        sm: {
+          webp: "/lovable-uploads/d45c62e1-1fd2-464c-bda8-070678bcbb05.png",
+          jpg: "/lovable-uploads/d45c62e1-1fd2-464c-bda8-070678bcbb05.png",
+        },
+        lg: {
+          webp: "/lovable-uploads/d45c62e1-1fd2-464c-bda8-070678bcbb05.png",
+          jpg: "/lovable-uploads/d45c62e1-1fd2-464c-bda8-070678bcbb05.png",
+        }
+      }
+    },
+    {
+      url: "/lovable-uploads/9d71f9a6-7efa-4a72-9854-e9016f1ee5aa.png",
+      title: "Local Experience",
+      description: "Traditional kalesa rides through historic streets",
+      sizes: {
+        sm: {
+          webp: "/lovable-uploads/9d71f9a6-7efa-4a72-9854-e9016f1ee5aa.png",
+          jpg: "/lovable-uploads/9d71f9a6-7efa-4a72-9854-e9016f1ee5aa.png",
+        },
+        lg: {
+          webp: "/lovable-uploads/9d71f9a6-7efa-4a72-9854-e9016f1ee5aa.png",
+          jpg: "/lovable-uploads/9d71f9a6-7efa-4a72-9854-e9016f1ee5aa.png",
+        }
+      }
+    },
+    {
+      url: "/lovable-uploads/e58d6029-5724-412d-82af-b2d244b053b8.png",
       title: "Fine Dining",
       description: "Exquisite dining experience with local and international cuisine",
       sizes: {
         sm: {
-          webp: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png",
-          jpg: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png",
+          webp: "/lovable-uploads/e58d6029-5724-412d-82af-b2d244b053b8.png",
+          jpg: "/lovable-uploads/e58d6029-5724-412d-82af-b2d244b053b8.png",
         },
         lg: {
-          webp: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png",
-          jpg: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png",
-        }
-      }
-    },
-    {
-      url: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png",
-      title: "Local Experience",
-      description: "Experience traditional kalesa rides through historic Vigan",
-      sizes: {
-        sm: {
-          webp: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png",
-          jpg: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png",
-        },
-        lg: {
-          webp: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png",
-          jpg: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png",
+          webp: "/lovable-uploads/e58d6029-5724-412d-82af-b2d244b053b8.png",
+          jpg: "/lovable-uploads/e58d6029-5724-412d-82af-b2d244b053b8.png",
         }
       }
     },
