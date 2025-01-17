@@ -10,9 +10,14 @@ const Gallery = () => {
       title: "Hotel Exterior",
       description: "Our beautiful Spanish colonial-style hotel facade",
       sizes: {
-        sm: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png?w=640",
-        md: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png?w=1024",
-        lg: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png?w=1920",
+        sm: {
+          webp: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png",
+          jpg: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png",
+        },
+        lg: {
+          webp: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png",
+          jpg: "/lovable-uploads/8841fd59-0412-4220-adca-62a69cecfa0f.png",
+        }
       }
     },
     {
@@ -20,9 +25,14 @@ const Gallery = () => {
       title: "Elegant Interior",
       description: "Spacious and well-appointed interior spaces",
       sizes: {
-        sm: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png?w=640",
-        md: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png?w=1024",
-        lg: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png?w=1920",
+        sm: {
+          webp: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png",
+          jpg: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png",
+        },
+        lg: {
+          webp: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png",
+          jpg: "/lovable-uploads/f7041d97-13d3-4ae7-8979-b038d94903ce.png",
+        }
       }
     },
     {
@@ -30,9 +40,14 @@ const Gallery = () => {
       title: "Heritage Courtyard",
       description: "Historic statuary and garden features in our courtyard",
       sizes: {
-        sm: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png?w=640",
-        md: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png?w=1024",
-        lg: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png?w=1920",
+        sm: {
+          webp: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png",
+          jpg: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png",
+        },
+        lg: {
+          webp: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png",
+          jpg: "/lovable-uploads/e9ab0742-8da3-4a1a-876d-b48196f1dbeb.png",
+        }
       }
     },
     {
@@ -40,9 +55,14 @@ const Gallery = () => {
       title: "Fine Dining",
       description: "Exquisite dining experience with local and international cuisine",
       sizes: {
-        sm: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png?w=640",
-        md: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png?w=1024",
-        lg: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png?w=1920",
+        sm: {
+          webp: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png",
+          jpg: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png",
+        },
+        lg: {
+          webp: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png",
+          jpg: "/lovable-uploads/d1da7cb4-2943-4cfe-a02c-64f32b74b2db.png",
+        }
       }
     },
     {
@@ -50,9 +70,14 @@ const Gallery = () => {
       title: "Local Experience",
       description: "Experience traditional kalesa rides through historic Vigan",
       sizes: {
-        sm: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png?w=640",
-        md: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png?w=1024",
-        lg: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png?w=1920",
+        sm: {
+          webp: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png",
+          jpg: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png",
+        },
+        lg: {
+          webp: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png",
+          jpg: "/lovable-uploads/c5827887-3b59-4484-b37c-93291022cf75.png",
+        }
       }
     },
   ];
@@ -82,23 +107,37 @@ const Gallery = () => {
                   }`}
                 >
                   <picture>
+                    {/* Large screen, high DPI */}
                     <source
+                      type="image/webp"
+                      media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), 
+                             (min-width: 1024px) and (min-resolution: 192dpi)"
+                      srcSet={`${image.sizes.lg.webp} 2x`}
+                    />
+                    {/* Large screen, standard DPI */}
+                    <source
+                      type="image/webp"
                       media="(min-width: 1024px)"
-                      srcSet={image.sizes.lg}
+                      srcSet={image.sizes.lg.webp}
                     />
+                    {/* Small screen, high DPI */}
                     <source
-                      media="(min-width: 640px)"
-                      srcSet={image.sizes.md}
+                      type="image/webp"
+                      media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                      srcSet={`${image.sizes.sm.webp} 2x`}
                     />
+                    {/* Small screen, standard DPI */}
+                    <source
+                      type="image/webp"
+                      srcSet={image.sizes.sm.webp}
+                    />
+                    {/* Fallback image */}
                     <img
-                      src={image.sizes.sm}
+                      src={image.sizes.lg.jpg}
                       alt={image.title}
-                      className="w-full h-full object-cover transform-gpu"
-                      style={{
-                        imageRendering: "auto",
-                        backfaceVisibility: "hidden",
-                      }}
+                      className="w-full h-full object-cover"
                       loading={index === 0 ? "eager" : "lazy"}
+                      decoding="async"
                     />
                   </picture>
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8">
